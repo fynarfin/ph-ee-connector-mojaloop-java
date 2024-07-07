@@ -275,7 +275,7 @@ public class QuoteRoutes extends ErrorHandlerRouteBuilder {
                             new PartyIdInfo(requestPayeePartyIdInfo.getPartyIdType(),
                                     requestPayeePartyIdInfo.getPartyIdentifier(),
                                     null,
-                                    exchange.getProperty(PARTY_LOOKUP_FSP_ID, String.class)),
+                                    requestPayeePartyIdInfo.getFspId()),
                             null,
                             null,
                             null);
